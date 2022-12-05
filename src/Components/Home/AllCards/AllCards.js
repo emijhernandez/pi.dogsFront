@@ -10,24 +10,20 @@ import './AllCards.css';
 function AllCards({currentPage, setCurrentPage, dogsPerPage, indexOfFirstDog, indexOfLastDog}) {
 
   const dispatch = useDispatch();
-  let results = useSelector(state => state.dogs);
-  
-  
-  const CurrentDog = result.slice(indexOfFirstDog, indexOfLastDog)
-  const paginate =(page) => {
-    setCurrentPage(page)
-  }
   const [search,setSearch]=useState("");
+  let results = useSelector(state => state.dogs.filter((raza)=>raza.name.toLowerCase().includes(search.toLowerCase())));
 
   const searcher=(e)=>{
     setSearch(e.target.value)
     setCurrentPage(1)
   }
-  let result=[]
-  if(!search){
-    result=results
-  }else{
-    result=results.filter((raza)=>raza.name.toLowerCase().includes(search.toLowerCase()))
+  // if(search){
+  //  results.filter((raza)=>raza.name.toLowerCase().includes(search.toLowerCase()))
+  // }
+  
+  const CurrentDog = results.slice(indexOfFirstDog, indexOfLastDog)
+  const paginate =(page) => {
+    setCurrentPage(page)
   }
 
   useEffect(() => {
@@ -55,11 +51,11 @@ function AllCards({currentPage, setCurrentPage, dogsPerPage, indexOfFirstDog, in
     <div>
         <input value={search} className="search" onChange={searcher} type="text" placeholder="Busqueda" /> 
       <div className='AllCards'>
-        {result.length !== 0 ? cards() : <Loader />}
+        {results.length !== 0 ? cards() : <Loader />}
       </div>
       <Pagination 
         dogsPerPage={dogsPerPage} 
-        totalPosts={result.length} 
+        totalPosts={results.length} 
         paginate={paginate} 
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
