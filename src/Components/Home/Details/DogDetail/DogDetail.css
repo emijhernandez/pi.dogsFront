@@ -1,0 +1,83 @@
+.profile {
+    display: flex;
+    gap: 45px;
+    width: 526px;
+    font-family: 'Montserrat';
+  }
+  .dogDetail {
+    display: flex;
+    justify-content:center;
+    max-width: 1050px;
+    margin: 0 auto;
+    gap: 30px;
+    background-color: #565656;
+  }
+  .div_dog_profile {
+    width: 180px; 
+    height: 180px;
+    border-radius: 10px; 
+    overflow: hidden;
+  }
+  .image_dog_profile {
+    position: relative;
+    max-width: 310px;
+    right: 70px;
+    z-index: 2;
+  }
+  .div_dog_name {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .name_dog {
+    font-size: 32px;
+    font-weight: 800;
+    color: orange;
+  }
+  .sobre_dog {
+    font-size: 20px;
+    font-weight: 700;
+    color: #bcbcbc;
+  }
+  
+  .table_container {
+    margin: 44px 0 0;
+  }
+  table {
+    max-width: 526px;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  th {
+    color: rgba(255, 166, 0, 0.83);
+    text-align: start;
+  }
+  th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+  }
+  .encabezado_tabla {
+    padding: 20px ;
+  }
+  .table_caracteristicas {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px;
+  }
+  .table_temp {
+    padding-bottom: 88px;
+  }
+  .table_datos {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .div_banner {
+    max-width: 400px;
+    height: 607px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+ 

@@ -1,0 +1,45 @@
+.home {
+  background-image: url("https://img.pixers.pics/pho(s3:400/FO/18/17/85/41/9/400_FO181785419_777b417b99f528c913a290759a135f6c.jpg,400,400,jpg)/fundas-de-edredon-patron-transparente-oscuro-de-vector-gato-o-perro-huella.jpg.jpg");
+  background-color: rgba(0, 0, 0, 0.472);
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  .home_options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
+  
+  .div_filtro_ordernamineto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 240px;
+    width: 100%;
+  }
+  .div_ordernamiento {
+    display: flex;
+    justify-content: space-between;
+    max-width: 240px;
+    background-color: rgba(181, 97, 0, 0.712);
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 14px;
+    border-radius: 10px;
+  transition: 0.5s;
+  }
+  .div_ordernamiento:hover{
+    background-color: rgba(212, 113, 0, 0.872);
+  }
+  .select_ordernamiento {
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 2px;
+    border-radius: 10px;
+  }
+  .select_ordernamiento:focus {
+    outline: none;
+  }

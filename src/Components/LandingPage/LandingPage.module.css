@@ -1,0 +1,53 @@
+body{
+    background-image: url("https://s1.1zoom.me/big0/155/Dogs_Amstaff_Snout_Glance_Black_background_595956_1280x853.jpg");
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.443);
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  .main_left {
+    max-width: 350px;
+    margin-top: 150px;
+  }
+  .titulo {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 55px;
+    letter-spacing: 0.5%;
+    color: var(--azul-oscuro);
+  }
+  .sub_titulo {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 600;
+    color: whitesmoke;
+    letter-spacing: 0.5%;
+    line-height: 20px;
+    max-width: 285px;
+    text-decoration: none;
+    margin: 16px 0 38px 0;
+    align-items: center;
+  }
+  .boton{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: rgba(156, 156, 156, 0.528);
+  }
+  .boton:hover {
+    transition: 0.5s;
+    background-color: rgba(71, 64, 64, 0.841);
+  }

@@ -1,0 +1,16 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1050;
+    margin: 0 auto;
+  }
+  
+  .card_loading {
+    width: 240px;
+    font-size: 50px;
+    height: 320px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+  }

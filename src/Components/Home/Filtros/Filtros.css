@@ -1,0 +1,39 @@
+.filtro {
+    display: inline-flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+  }
+
+  .button_filter {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgba(181, 97, 0, 0.712);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button_filter:hover {
+    background-color: rgba(212, 113, 0, 0.872);
+  }
+  .div_filtros_relative {
+    position: relative;
+    right: 97px;
+    bottom: 10px;
+  }
+  .div_filtros {
+    position: absolute;
+    display: flex;
+    background-color: rgba(109, 109, 109, 0.721);
+    gap: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .div_fil {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }

@@ -1,0 +1,36 @@
+.card{
+  background-color: rgba(0, 0, 0, 0.821);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.card:hover{
+  background-color: rgb(117, 76, 0);
+}
+.div_image_card {
+    max-width: 240px;
+    height: 160px;
+    overflow: hidden;
+  }
+  .card_image_dog {
+    width: 100%;
+  }
+  .div_info_card {
+    font-family: 'Montserrat';
+    padding: 15px;
+  }
+  .card_name_dog {
+    font-size: 20px;
+    font-weight: 600;
+    color: whitesmoke;
+  }
+  .card_weight_dog {
+    font-size: 13px;
+    font-weight: 600;
+    color: orange;
+  }
+  .card_temperament_dog {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(172, 172, 172);
+    margin-top: 5px;
+  }

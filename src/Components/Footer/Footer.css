@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 10px;
+    gap: 5px;
+    font-family: 'Montserrat';
+    background-color: rgba(0, 0, 0, 0.825);
+  }
+  .text_footer {
+    font-size: 14px;
+    font-weight: 700;
+    color: gray;
+  }
