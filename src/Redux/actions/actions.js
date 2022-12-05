@@ -12,7 +12,7 @@ export const ORDER_BY_WEIGHT = 'ORDER_BY_WEIGHT';
 export const getDogs = () => {
   return async function(dispatch) {
     try {
-      let dogs = (await axios("http://localhost:3001/dogs")).data
+      let dogs = (await axios("https://db-marv.uc.r.appspot.com/dogs")).data
       return dispatch({
       type: GET_DOGS,
       payload: dogs
@@ -26,7 +26,7 @@ export const getDogs = () => {
 export const getDetail = (id) => {
   return async function(dispatch) {
     try {
-      let details = (await axios(`http://localhost:3001/dogs/${id}`)).data
+      let details = (await axios(`https://db-marv.uc.r.appspot.com/dogs/${id}`)).data
       return dispatch({
       type: GET_DETAILS,
       payload: details
@@ -40,7 +40,7 @@ export const getDetail = (id) => {
 export const dogPost = (payload) => {
   return async function(dispatch) {
     try {
-      await axios.post("http://localhost:3001/dogs", payload);
+      await axios.post("https://db-marv.uc.r.appspot.com/dogs", payload);
       alert("perro creado correctamente")
       return dispatch({
         type: DOG_POST
@@ -55,7 +55,7 @@ export const dogPost = (payload) => {
 export const getTemperament = () => {
   return async function(dispatch) {
     try {
-      let temperaments = (await axios("http://localhost:3001/temperaments")).data;
+      let temperaments = (await axios("https://db-marv.uc.r.appspot.com/temperaments")).data;
       let allTemps = temperaments.map(e => e)
       return dispatch({
         type: GET_TEMPERAMENT,

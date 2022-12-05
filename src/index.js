@@ -10,7 +10,7 @@ import dotenv from "dotenv";
 import axios from 'axios';
 dotenv.config();
 
-axios.defaults.baseURL = process.env.REACT_APP_API || "http://http://localhost:3001";
+axios.defaults.baseURL = process.env.REACT_APP_API || "https://db-marv.uc.r.appspot.com";
 
 ReactDOM.render(
   <React.StrictMode>
